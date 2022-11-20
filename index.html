@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale1.0,user-scalable=no">
+
+    <title>Deblisher Yong Portfolio</title>	
+	<link rel="stylesheet" type="text/css" href="web/css/style.css"/>
+    <link rel="shortcut icon" href="web/img/favicon.ico" type="image/x-icon">
+	<script src="web/js/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="web/js/simple-lightbox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="web/css/simple-lightbox.css"/>
+	<script type="text/javascript" src="web/js/skrollr.min.js"></script>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<script src="web/js/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="web/css/slick.css"/>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+	<header id="header">
+		<div class="container">
+			<div class="logo">
+				<a href="/"><h1><img src="web/img/logo.png" alt="Deblisher Yong Logo"></h1></a>
+			</div><!-- logo -->
+			<nav class="menu">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><a href="#section_3">ABOUT</a></li>
+					<li><a href="#section_4">SKILLS</a></li>
+					<li><a href="#section_6">WORKS</a></li>
+					<li><a href="#section_8">CONTACT</a></li>
+				</ul>
+			</nav><!-- menu -->
+			<div class="right">
+				<a href="//www.instagram.com/yong_hellish_yoo/"><i class="xi-instagram"></i></a>
+				<button type="button" id="menuBtn"><i class="xi-bars"></i></button>
+				<div class="side_menu" id="sideMenu">
+					<button type="button" id="menuCan"><i class="xi-close"></i></button>
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="#section_3">ABOUT</a></li>
+						<li><a href="#section_4">SKILLS</a></li>
+						<li><a href="#section_6">WORKS</a></li>
+						<li><a href="#section_8">CONTACT</a></li>
+					</ul>
+				</div><!-- side_menu -->
+			</div><!-- right -->
+		</div><!-- container -->
+	</header><!-- hedaer -->
+
+	<script>
+
+		jQuery(document).ready(function(){
+
+			$(window).scroll(function() {    
+				// find the id with class 'active' and remove it
+				$("#header").removeClass("active");
+				// get the amount the window has scrolled
+				var scroll = $(window).scrollTop();
+				// add the 'active' class to the correct id based on the scroll amount
+				if (scroll <= 100000) {
+					$("#header").addClass("active");
+				}
+				if (scroll <= 0) {
+					$("#header").removeClass("active");
+				}
+			});
+
+			$('#menuBtn').click(function(){
+				$('#sideMenu').addClass("active");
+			});
+
+			$('#menuCan').click(function(){
+				$('#sideMenu').removeClass("active");
+			});
+
+		});
+	</script>
+
+
+	<section id="section_1">
+		<div class="container">
+			<div class="text_box">
+				<div id="title-text"></div>
+			</div><!-- text_box -->
+			<div class="text_box_2">
+				<article>
+					안녕하세요. 저의 포트폴리오에 오신 것을 환영 합니다.
+					저는 항상 성장하는 사람 되기 위해 노력하고 있습니다.
+					하나하나 배워나가는 건 참 즐거운 일인 것 같아요.
+					미래의 제가 지금보다 더 낫은 사람이 되어 있기를 바랍니다.
+					포트폴리오를 보시고 궁금한 점이 있으시다면 언제든지 연락주시기 바랍니다.
+					감사합니다.
+				</article>
+			</div><!-- text_box_2 -->
+			<div class="round"><img src="web/img/round.png" alt="title_rolling"></div><!-- round -->
+		</div><!-- container -->
+	</section><!-- section_1 -->
+
+	<script>
+		$(window).ready(function() {
+			var text = document.getElementById("title-text");
+
+			var typewriter = new Typewriter(text, {
+				loop: false,
+				delay: 100,
+			});
+
+			typewriter
+				.typeString('<h2>모든 것의 시작은 위험하다. <span class="outline">그러나 무엇을 막론하고</span><br><span class="outline">시작하지 않으면</span> 아무것도 시작되지 않는다.</h2><br>')
+				.pauseFor(500)
+				.typeString('<p>- 프레드리히 니체</p>')
+				.start();
+		});
+	</script>
+
+	<section id="section_2">
+		<div class="container">
+			<div class="sc2_bg"></div><!-- sc2_bg -->
+				<div id="skrollr-body">
+					<div class="scroll-pause" data-anchor-target=".sc2_bg" data-100p-top-top="transform:translateY(100%);" data-top-top="transform:translateY(0%)" data--150p-top-top="" data--300p-top-top="transform:translateY(-100%)">
+						<div class="row" data-anchor-target=".sc2_bg" data-top-top="transform: translateX(0%);" data--150p-top-top="transform: translateX(-70%);">
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+						</div><!-- row -->
+						<div class="row" data-anchor-target=".sc2_bg" data-top-top="transform: translateX(0%);" data--150p-top-top="transform: translateX(70%);">
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+						</div><!-- row -->
+						<div class="row" data-anchor-target=".sc2_bg" data-top-top="transform: translateX(0%);" data--150p-top-top="transform: translateX(-70%);">
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+							<p>DESIGN</p>
+							<p class="outline">PUBLISHING</p>
+						</div><!-- row -->
+					</div><!-- scroll-pause -->
+			</div><!-- skrollr-body -->
+		</div><!-- container -->
+	</section><!-- section_2 -->
+
+	<section id="section_3">
+		<div class="container">
+			<div class="left">
+					<div class="img_box" id="profilePic" data-aos="zoom-out" data-aos-duration="500">
+					</div><!-- img_box -->
+				</div><!-- left -->
+				<div class="right">
+					<div class="box">
+						<div class="title" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+							<h3>Please allow me<br>to <span class="main_color">introduce myself.</span></h3>
+							<article>
+								스스로 성장하는 "성장형" 디블리셔 유용 입니다.<br>
+								현재는 프론트엔드 개발자가 되기 위해 절차탁마하고 있습니다.<br>
+								제가 처음 이 일을 시작했을 때는 생소했던 단어였는데요.<br>
+								조금씩 쌓은 지식으로 도움이 되는 사람을 목표로 하고 있습니다.
+							</article>
+						</div><!-- title -->
+						<ul>
+							<li  data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+								<p><i class="xi-user"></i> NAME  <span>YOO YONG</span></p>
+								<p><i class="xi-cake"></i> BIRTH  <span>1988.02.09</span></p>
+								<p><i class="xi-maker"></i> ADDRESS  <span>서울시 마포구 독막로</span></p>
+								<p><i class="xi-mobile"></i> TEL  <span>010-5758-4983</span></p>
+								<p><i class="xi-mail"></i> EMAIL  <span><a href="mailto:yungts@hanmail.net">yungts@hanmail.net</a></span></p>
+							</li>
+							<li  data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+								<p>2015  <span>그린컴퓨터아카데미 UI,UX 반응형 웹 과정 수료</span></p>
+								<p>2016~2017  <span>미래비즈코리아 개발/기획팀</span></p>
+								<p>2017~2018  <span>데일리어스 디자인팀</span></p>
+								<p>2019~2020  <span>군인공제회 C&C 디자인팀</span></p>
+								<p>2020~2021  <span>블랙아스터비 디자인팀</span></p>
+								<p>2021~2022  <span>주식회사 정직한친구들 플랫폼 개발팀</span></p>
+							</li>
+						</ul>
+					</div><!-- box -->
+				</div><!-- right -->
+		</div><!-- container -->
+	</section><!-- section_3 -->
+
+	<section id="section_4">
+		<div class="container">
+			<div class="content">
+				<ul>
+					<li class="empty"></li>
+					<li data-aos="fade-left" data-aos-duration="500" data-aos-delay="0">
+						<span>01</span>
+						<h4>UI DEVELOPMENT</h4>
+						<p>
+							웹디자인 및 퍼블리싱 (HTML, CSS, JS)를 이해하고 다루며
+							유지보수를 고려한 코드를 작성 합니다.
+						</p>
+					</li>
+					<li data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
+						<span>02</span>
+						<h4>SEMANTIC MARKUP</h4>
+						<p>
+							웹표준을 바탕으로한 시멘틱 마크업을 지향하며,
+							SEO 최적화를 통해 더 많은 사용자들이 접근할 수 있게 합니다.
+						</p>
+					</li>
+					<li data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+						<span>03</span>
+						<h4>UI,UX DESIGN</h4>
+						<p>
+						   웹 기획의 구조와 과정을 이해하며, 기획 의도에 맞는 컨텐츠를
+						   제작 합니다.
+						</p>
+					</li>
+					<li data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+						<span>04</span>
+						<h4>DESIGN TOOL</h4>
+						<p>
+						   포토샵, 일러스트레이터, 인디자인 등 툴 사용이 능숙하며,
+						   SVG 활용이 가능 합니다.
+						</p>
+					</li>
+					<li class="empty"></li>
+				</ul>
+			</div><!-- content -->
+		</div><!-- container -->
+	</section><!-- section_4 -->
+
+	<section id="section_5">
+		<div class="container">
+			<div class="content">
+				<div class="left">
+					<div class="box"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+						<h4>Look at my Skills</h4>
+						<p>I'm always leveling up <span class="xi-angle-right-min"></span></p>
+					</div><!-- box -->
+				</div><!-- left -->
+				<div class="right">
+					<ul data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+						<li>
+							<p class="skill_name" id="skill_html">HTML5</p>
+							<div class="skillbar_wrapper">
+								<div class="skillbar_bar" id="skillbar_html"></div>
+								<div class="skill_bar_percent">90%</div>
+							</div>
+						</li>
+						<li>
+							<p class="skill_name" id="skill_css">CSS3</p>
+							<div class="skillbar_wrapper">
+								<div class="skillbar_bar" id="skillbar_css"></div>
+								<div class="skill_bar_percent">90%</div>
+							</div>
+						</li>
+						<li>
+							<p class="skill_name" id="skill_js">JAVASCRIPT / JQUERY</p>
+							<div class="skillbar_wrapper">
+								<div class="skillbar_bar" id="skillbar_js"></div>
+								<div class="skill_bar_percent">70%</div>
+							</div>
+						</li>
+						<li>
+							<p class="skill_name" id="skill_ps">PHOTOSHOP</p>
+							<div class="skillbar_wrapper">
+								<div class="skillbar_bar" id="skillbar_ps"></div>
+								<div class="skill_bar_percent">85%</div>
+							</div>
+						</li>
+						<li>
+							<p class="skill_name" id="skill_is">ILLUSTRATOR</p>
+							<div class="skillbar_wrapper">
+								<div class="skillbar_bar" id="skillbar_is"></div>
+								<div class="skill_bar_percent">80%</div>
+							</div>
+						</li>
+					</ul>
+				</div><!-- right -->
+			</div><!-- content --> 
+		</div><!-- container -->
+	</section><!-- section_5 -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			var isVisible = false;
+
+			$(window).on('scroll', function() {
+				if (checkVisible($('#section_5'))&&!isVisible) {
+					$("#skillbar_html").animate({width:'90%'},1500);
+					$("#skillbar_css").animate({width:'90%'},1500);
+					$("#skillbar_js").animate({width:'70%'},1500);
+					$("#skillbar_ps").animate({width:'85%'},1500);
+					$("#skillbar_is").animate({width:'80%'},1500);
+					isVisible=true;
+				} 
+			});
+
+			function checkVisible( elm, eval ) {
+				eval = eval || "object visible";
+				var viewportHeight = $(window).height(), // Viewport Height
+					scrolltop = $(window).scrollTop(), // Scroll Top
+					y = $(elm).offset().top,
+					elementHeight = $(elm).height();   
+				
+				if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+				if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+			}
+		});
+	</script>
+
+	<section id="section_6">
+		<div class="container">
+			<div class="content">
+				<div class="left">
+					<div class="box"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+						<h4>Look at my Works</h4>
+						<span class="outline">DESIGN & PUBLISHING WORKS</span>
+						<p>I'm always Thisty  <i class="xi-angle-right-min"></i></p>
+					</div><!-- box -->
+				</div><!-- left -->
+				<div class="right">
+					<ul   data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+						<li>
+							<a href="//iogroup.co.kr/" target="_blank">
+								<img src="web/img/sc_6_item_7.jpg">
+								<p>아이오그룹</p>
+								<i>기획 50%, 디자인 70%, 퍼블리싱 100%</i>
+								<span>클라이언트측 회사의 기획자, 디자이너분과 협업했던 작업이었습니다. 코워커들이 능력이 뛰어나셔서 배울 점이 많았던 작업이었어요.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//mactools.co.kr/" target="_blank">
+								<img src="web/img/sc_6_item_8.jpg">
+								<p>맥툴즈</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>반응형으로 작업한 웹사이트 입니다. 클라이언트가 수리 가격 유지보수를 쉽게하기 위해 가격표를 이미지 태그로 작업했던 작업물이네요.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//xn--o11b85uh9c71i.com/" target="_blank">
+								<img src="web/img/sc_6_item_5.jpg">
+								<p>청소어때</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>청소업체 웹사이트를 작업 했었습니다. 로고부터 홈페이지를 전부 혼자 작업했었는데요 깔끔한 색감이 마음에 드는 작업이었습니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//kim1238.cafe24.com" target="_blank">
+								<img src="web/img/sc_6_item_1.jpg">
+								<p>블랙아스터비</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>카페24 쇼핑몰 솔루션으로 제작하였으며, 기획, 디자인, 퍼블리싱, 개발까지 혼자 진행 하였습니다. 의류 촬영도 함께 했던 재미있는 기억이 많은 프로젝트였습니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//black0318aaaa.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_2.jpg">
+								<p>에이랩테크</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>혼자 작업한 반응형 웹사이트 입니다. 애플 수리점이기에 깔끔한 느낌으로 디자인 해봤습니다. 워드프레스 플러그인을 사용하여 폼메일까지 적용 했던 작업 입니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//black0318aa.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_3.jpg">
+								<p>에이테크몰</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>카페24 쇼핑몰 솔루션으로 제작하였으며, 상품 상세페이지까지 전부 작업 했습니다. 꾸준히 운영되고 있는 작업물을 보면 기분이 좋습니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//repairking.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_4.jpg">
+								<p>스마트수리왕</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>혼자 작업한 반응형 웹사이트 입니다. 수리왕이라는 상호를 듣고 왕 느낌의 캐릭터를 일러스트레이터로 그려봤습니다. 클라이언트가 카카오톡 프사로 쓰셨던 기억이 있는 작업 입니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//repairking.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_6.jpg">
+								<p>오케이컴 119</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>혼자 작업한 반응형 웹사이트 입니다. 컴퓨터 수리점 홈페이지를 작업 했었습니다. 수리 관련 컨텐츠가 굉장히 많아 타이핑하는데 고생을 했던 작업물 입니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//applenfix1.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_9.jpg">
+								<p>애플앤픽스</p>
+								<i>기획 50%, 디자인 50%, 퍼블리싱 100%</i>
+								<span>기존에 있던 네이버 모두로 작업된 홈페이지를 웹사이트로 리뉴얼하는 작업이었습니다. 기존 작업물이 좋아서 디자인이 깔끔하게 잘 나왔네요.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//pattayataxi.kr/" target="_blank">
+								<img src="web/img/sc_6_item_10.jpg">
+								<p>파타야택시 코리아</p>
+								<i>디자인 100%, 퍼블리싱 100%</i>
+								<span>기획을 받고 작업했던 반응형 웹사이트 입니다. 택시 견적 계산 부분은 개발자분이 작업해주셨었습니다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="//shinhwa001.cafe24.com/" target="_blank">
+								<img src="web/img/sc_6_item_11.jpg">
+								<p>신화창호</p>
+								<i>기획 100%, 디자인 100%, 퍼블리싱 100%</i>
+								<span>기존사이트의 내용을 비슷하게 작업해 달라는 의뢰를 받았었습니다. 간단한 라이브러리들을 이용해 작업 했던 작업물입니다</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="web/img/sc_6_item_12.jpg">
+								<p>I'm still working</p>
+								<span>홈페이지 제작은 계속 하고 있습니다. 배우고 익혀서 기억에 남는 더 좋은 작업물을 만들어가고 싶어요</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- right -->
+			</div><!-- content -->
+		</div><!-- container -->
+	</section><!-- section_6 -->
+
+	<section id="section_7">
+		<div class="container">
+			<div class="title">
+				<h4 data-aos="zoom-in">And also check out my <span class="outline">DESIGN WORKS</span></h4>
+			</div><!-- title -->
+			<div class="content">
+				<div class="gallery" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+					<a href="web/img/gallery_1.jpg"><img src="web/img/gallery_1_thumb.jpg"></a>
+					<a href="web/img/gallery_2.jpg"><img src="web/img/gallery_2_thumb.jpg"></a>
+					<a href="web/img/gallery_3.jpg"><img src="web/img/gallery_3_thumb.jpg"></a>
+					<a href="web/img/gallery_4.jpg"><img src="web/img/gallery_4_thumb.jpg"></a>
+					<a href="web/img/gallery_5.jpg"><img src="web/img/gallery_5_thumb.jpg"></a>
+					<a href="web/img/gallery_6.jpg"><img src="web/img/gallery_6_thumb.jpg"></a>
+					<a href="web/img/gallery_7.jpg"><img src="web/img/gallery_7_thumb.jpg"></a>
+				</div><!-- gallery -->
+			</div><!-- content -->
+		</div><!-- container -->
+	</section><!-- section_7 -->
+
+	<script>
+		(function() {
+			var $gallery = new SimpleLightbox('.gallery a', {});
+		})();
+	</script>
+
+	<section id="section_8">
+		<div class="container">
+			<div class="title">
+				<h4>Contact Me</h4>
+			</div><!-- title -->
+			<div class="content">
+				<div class="email">
+					<div class="circle"></div>
+					<a href="mailto:yungts@hanmail.net">yungts@hanmail.net</a>
+				</div><!-- email -->
+				<p>포트폴리오에 대해 궁금하신 사항이 있으시다면 언제든 연락 바랍니다.</p>
+			</div><!-- content -->
+		</div><!-- container -->
+	</section><!-- section_7 -->
+
+	   
+	<footer>
+		<div class="container">
+			<p>Copyrights 2022. Deblisher Yong. all rights reserved</p>
+			<span>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작되었습니다.</span>
+		</div><!-- container -->
+	</footer>
+
+
+	<?php wp_footer(); ?>
+	
+    <script type="text/javascript">
+        $(function(){     
+            $(window).scroll(function(event){
+                var windowScroll = $(window).scrollTop();
+                console.log(windowScroll);
+            });
+        });
+
+        skrollr.init({
+            forceHeight: false,
+            mobileCheck: function(){
+                    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                    // mobile device
+                    }
+                }
+            });
+    </script>
+    <script> AOS.init(); </script>
+
+</body>
+</html>
